@@ -1,0 +1,4 @@
+gaya_shop:
+    resource: "@GayaShopBundle/Resources/config/routing.yml"
+    prefix:   /
+

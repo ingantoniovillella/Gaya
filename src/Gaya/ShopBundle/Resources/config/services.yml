@@ -1,0 +1,7 @@
+parameters:
+#    gaya_shop.example.class: Gaya\ShopBundle\Example
+
+services:
+#    gaya_shop.example:
+#        class: %gaya_shop.example.class%
+#        arguments: [@service_id, "plain_value", %parameter%]
