@@ -3,11 +3,21 @@
     <head>
         <meta charset="UTF-8" />
         <title>{% block title %}Welcome!{% endblock %}</title>
-        {% block stylesheets %}{% endblock %}
+        {% block stylesheets %}
+            <link href="{{ asset('bundles/gaya/css/bootstrap.css') }}" rel="stylesheet">
+            <link href="{{ asset('bundles/gaya/css/heroic-features.css') }}" rel="stylesheet">
+        {% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
-        {% block body %}{% endblock %}
-        {% block javascripts %}{% endblock %}
+        {% block body %}
+            {% block header %}{% endblock %}
+            {% block content %}{% endblock %}
+            {% block footer %}{% endblock %}
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('bundles/gaya/js/js/jquery-1.10.2.js') }}"></script>
+            <script src="{{ asset('bundles/gaya/js/bootstrap.js') }}"></script>
+        {% endblock %}
     </body>
 </html>
